@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: native
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/configurations
+#          classpath eka kiyanne resources directory eka
+#save all configurations file that are require to all microservices
+server:
+  port: 8888
